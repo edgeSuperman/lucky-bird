@@ -6,6 +6,18 @@
  * find out interest
  */
 
-var users = [
 
-];
+users = (function(){
+    var count = 100;
+    var result = [];
+    while(count){
+        result.push({
+            index: count-1,
+            avatar: "imgs/1.jpg",
+            name:"李开复"+ count,
+            weight: 0
+        });
+        count--;
+    }
+    return result;
+})();
